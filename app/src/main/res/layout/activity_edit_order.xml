@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.georgepark.projectctc.EditOrder">
+
+
+    <TextView
+        android:id="@+id/eOrderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Edit Order"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Order ID"
+        android:id="@+id/findOrderE"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/eOrderText"
+        android:layout_alignStart="@+id/foundOrderE"
+        android:layout_marginStart="13dp" />
+
+    <Button
+        android:id="@+id/findButtonE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/findOrderE"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="51dp"
+        android:text="search" />
+
+    <TextView
+        android:id="@+id/foundOrderE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119dp"
+        android:textSize="20dp"
+        android:text="Order ID:"
+        android:layout_below="@+id/findOrderE"
+        android:layout_toStartOf="@+id/editOrderE"
+        android:layout_marginEnd="33dp" />
+
+    <TextView
+        android:id="@+id/foundNameE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/foundOrderE"
+        android:layout_below="@+id/foundOrderE"
+        android:layout_marginTop="48dp"
+        android:text="Step:"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editNameE"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/foundNameE"
+        android:layout_alignBottom="@+id/foundNameE"
+        android:layout_alignStart="@+id/editOrderE" />
+
+    <EditText
+        android:id="@+id/editOrderE"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/foundOrderE"
+        android:layout_alignBottom="@+id/foundOrderE"
+        android:layout_alignEnd="@+id/findButtonE"
+        android:layout_marginEnd="25dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/editNameE"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

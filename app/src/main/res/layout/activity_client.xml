@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.georgepark.projectctc.ClientActivity">
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Scan your invoice here!"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:onClick="scanOnClick"
+        android:text="scan" />
+
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:text="Step:"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_below="@+id/scanner"
+        android:layout_alignStart="@+id/instructions"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nothing"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/nothing"
+        android:text=" "
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+</RelativeLayout>

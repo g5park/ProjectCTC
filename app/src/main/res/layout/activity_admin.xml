@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.georgepark.projectctc.AdminActivity">
+
+    <Button
+        android:id="@+id/scanAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:onClick="scanOnClick"
+        android:text="scan order" />
+
+    <Button
+        android:id="@+id/df"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete/find order"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/scanAdmin"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit order"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/df"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
